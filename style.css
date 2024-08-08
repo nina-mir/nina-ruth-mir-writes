@@ -5,15 +5,49 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: #CD0000;
-    color: #fff;
+    background-color: hsl(0,100%,40.2%);
+    color: hsl(0,100%,90.2%);
     font-size: 1.2rem;
     font-family: "Ubuntu Mono", monospace;
-
-
 }
 
+@media only screen and  (max-width: 767px)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    html{
+        margin: 0%;
+        padding: 0;
+        display: contents;
+    }
+    body{
+        font-size: 0.9rem;
+        display: block;
+        flex-direction: column;
+        margin: 0px;
+        overflow-x: hidden;
+        text-align: left;
+    }
 
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .twitter-contact{
+        margin: 0px;
+        padding: 0rem;
+    }
+ 
+    div, li, ul{
+        margin:0px;
+        padding: 0.1rem;
+    }
+
+    .list-title{
+        display: none;
+    }
+
+ 
+
+}
 .slider {
     width: 100%;
     /* max-width: 70%; */
@@ -82,16 +116,9 @@ li{
 
 }
 .list-title{
-    /* padding-left: 0.1rem; */
     padding: 3rem;
     text-shadow: 1px 1px 3px #CD0000    ;
-
 }
-
-/* .twitter-id a:link{
-    text-decoration: none;
-    color: aqua;
-} */
 
 a {
     text-shadow: 1px 1px 2px black;
@@ -111,7 +138,6 @@ ul{
 .greeting{
     line-height: 1.2rem;
     padding: 0.5rem 3rem 0.5rem 3rem;
-    /* background:radial-gradient(circle at 0%, #333, transparent 30%, #333,#cfaeb4 60%, hsl(0 80% 50% / 25%), #333 75%); */
     background: linear-gradient(90deg in hsl shorter hue, red, #333);
 
 }
@@ -129,7 +155,11 @@ ul{
     from {
         opacity: 1;
     }
-  
+    
+    to {
+        opacity: 0.6;
+    }
+
     to {
         opacity: .2;
     }
