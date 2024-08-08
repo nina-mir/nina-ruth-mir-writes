@@ -1,18 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 body {
     height: 100vh;
     display: grid;
     place-items: center;
+    background-color: #CD0000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Ubuntu Mono", monospace;
+
+
 }
+
 
 .slider {
     width: 100%;
-    max-width: 800px;
+    /* max-width: 70%; */
     height: 350px;
     position: relative;
     overflow: hidden;
     /* <===  */
-    border-radius: 15px;
-
+    border: 0.1rem solid #333;
+    margin-top: 2rem;
 }
 
 .slide {
@@ -55,3 +65,72 @@ body {
     top: 45%;
     right: 2%;
 }
+
+li{
+    margin-bottom: 1rem;
+    font-weight: 1000;
+    line-height: 1.2rem;
+}
+
+.first {
+    background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+}
+.twitter-contact{
+    background: radial-gradient(circle at 0%, #333, transparent 50%,  #cfaeb4 60%, hsl(0 80% 50% / 25%), #333 75%);
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+
+}
+.list-title{
+    /* padding-left: 0.1rem; */
+    padding: 3rem;
+    text-shadow: 1px 1px 3px #CD0000    ;
+
+}
+
+/* .twitter-id a:link{
+    text-decoration: none;
+    color: aqua;
+} */
+
+a {
+    text-shadow: 1px 1px 2px black;
+    color: azure;
+}
+
+ul{
+    background-image: linear-gradient(to right, #333, rgba(18, 17, 17, 0));
+    padding: 3rem;
+}
+
+.category{
+    margin-left: 2rem;
+    opacity: 0.5;
+}
+
+.greeting{
+    line-height: 1.2rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    /* background:radial-gradient(circle at 0%, #333, transparent 30%, #333,#cfaeb4 60%, hsl(0 80% 50% / 25%), #333 75%); */
+    background: linear-gradient(90deg in hsl shorter hue, red, #333);
+
+}
+
+.fire-icon{
+    animation-name: changing-size;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+@keyframes changing-size {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: .2;
+    }
+  }
