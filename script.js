@@ -4,7 +4,7 @@ console.log(slides);
 // loop through slides and set each slides translateX property to index * 100% 
 slides.forEach((slide, indx) => {
     slide.style.transform = "translateX(" + indx * 100 + "%)";
-    console.log(slide.style)
+    // console.log(slide.style)
 });
 
 //curr slide counter
